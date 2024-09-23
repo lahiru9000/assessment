@@ -3,8 +3,8 @@ const hasAllUniqueCharacters = function(input){
     let result;
     for(let character of characters){
         console.log(character);
-        const a = characters.filter(char => char === character);
-        if(a.length > 1){
+        const allSimilarCharacter = characters.filter(char => char === character);
+        if(allSimilarCharacter.length > 1){
             result = false;
             break;
         } else {

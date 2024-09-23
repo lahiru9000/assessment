@@ -1,3 +1,4 @@
+//question 1
 const hasAllUniqueCharacters = function(input){
     const characters = input.split('');
     let result;
@@ -14,4 +15,11 @@ const hasAllUniqueCharacters = function(input){
     return result;
 }
 
-console.log(hasAllUniqueCharacters('world'));
+// console.log(hasAllUniqueCharacters('world'));
+
+//question 2 task 2
+//a salesData object = {CustomerName: "Lahiru", TotalSpent: 50} 
+const customerWithHighestTotalSpent = function(salesData){
+    const sortedSalesData = salesData.sort((a, b) => a.TotalSpent - b.TotalSpent);
+    return sortedSalesData[sortedSalesData.length - 1];
+}
